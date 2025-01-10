@@ -88,10 +88,10 @@ footer {
 
 .help_panel {
     padding: 0 18px;
-    display: none;
-    /*background-color: white;*/
-    /*overflow: hidden;*/
-    overflow: visible;
+    display: contents;
+        /*background-color: white;*/
+     overflow: hidden;
+
 }
 
 <!--
