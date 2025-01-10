@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Llanfairfechan Sailing Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <a href="#" onclick="loadContent('home.html')">Home</a>
+  <a href="#" onclick="loadContent('about.html')">About</a>
+  <a href="#" onclick="loadContent('booking.html')">Booking</a>
+
+  <a href="https://llsc.justgo.com/Workbench.mvc/Show/1" target="_blank">Members Portal</a>
+<!--  <a href="#" onclick="loadContent('members.html')">Members Area</a>-->
+</nav>
+
+<section id="content">
+  <!-- Content will be loaded here dynamically -->
+</section>
+
+<footer>
+  <p>&copy; 2025 Llanfairfechan Sailing Club. All rights reserved.</p>
+</footer>
+
+<script>
+  function loadContent(page) {
+    fetch(page)
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('content').innerHTML = html;
+      });
+  }
+
+  // Load home page content initially
+  loadContent('home.html');
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+nav {
+  background-color: rgba(0, 123, 255, 0.8);
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+section {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin: 1em auto;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
