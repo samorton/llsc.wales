@@ -45,20 +45,40 @@ footer {
   width: 100%;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
-.accordion .accordion-header {
-  cursor: pointer;
-  display: block;
-  background: lightblue;
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
+
+#content {
+  background-color: rgba(173, 216, 230, 0.5); /* Light Blue with 50% opacity */
+
+  padding: 20px; /* Optional - to give some padding to the content */
+  border-radius: 8px; /* Optional - to enhance appearance with rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional - slight shadow for better visibility */
 }
 
-.accordion .accordion-content {
-  display: none; /* Hidden by default */
-  padding: 10px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  background: #f9f9f9;
+.accordion-container {
+  width: 80%;
+  margin: auto;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
