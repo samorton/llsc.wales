@@ -1,59 +1,20 @@
-<h2>Help</h2>
-<p>If you need assistance, please reach out to our support team at <a
-  href="mailto:llansailing@gmail.com">llansailing@gmail.com</a>.</p>
-
-
-<script>
-  alert("hi")
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-</script>
-
-
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Content for section 1.</p>
-  <ul>
-    <li><a href="#link1">Help Link 1</a></li>
-    <li><a href="#link2">Help Link 2</a></li>
-    <li><a href="#link3">Help Link 3</a></li>
-    <li><a href="#link4">Help Link 4</a></li>
-    <li><a href="#link5">Help Link 5</a></li>
-  </ul>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Content for section 2.</p>
-  fjdkslfjhdksfjkdsfjksjs
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Content for section 3.</p>
-  <!-- You can add more links or content here -->
-</div>
-
-<button class="accordion">Section 4</button>
-<div class="panel">
-  <p>Content for section 4.</p>
-  <!-- You can add more links or content here -->
-</div>
-
-<button class="accordion">Section 5</button>
-<div class="panel">
-  <p>Content for section 5.</p>
-  <!-- You can add more links or content here -->
-</div>
-
+<div help>
+    
+    <img src="/img/empty.gif" onload="alert('test');this.parentNode.removeChild(this);" />
+    <h2>Fast answers to our most asked questions</h2>
+    <p>If you need assistance, please contact us at<a href="mailto:llansailing@gmail.com">llansailing@gmail.com</a>.</p>
+    <div class="accordion-container">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Content for section 1.</p>
+        </div>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Content for section 2.</p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Content for section 3.</p>
+        </div>
+    </div>
+    <div>

@@ -57,6 +57,7 @@ footer {
 .accordion-container {
   width: 80%;
   margin: auto;
+
 }
 
 .accordion {
@@ -74,11 +75,4 @@ footer {
 
 .active, .accordion:hover {
   background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
 }
