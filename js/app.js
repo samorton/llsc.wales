@@ -8,7 +8,7 @@ function loadContent(page) {
         })
         .then(html => {
             document.getElementById('content').innerHTML = html;
-           // nodeScriptReplace(document.getElementsByTagName("body")[0]);
+            // nodeScriptReplace(document.getElementsByTagName("body")[0]);
         })
         .catch(error => {
             console.error('There was a problem loading the content:', error);
@@ -33,26 +33,43 @@ function wireAccordian() {
     }
 
 }
+
+function loadNewPage(page) {
+    fetch(page)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load the help page');
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Inject the new page's content into the dynamic-content container
+            document.getElementById('wordcontent').innerHTML = data;
+        })
+        .catch(error => console.error(error));
+}
+
+
 function nodeScriptReplace(node) {
-    if ( nodeScriptIs(node) === true ) {
-        node.parentNode.replaceChild( nodeScriptClone(node) , node );
-    }
-    else {
+    if (nodeScriptIs(node) === true) {
+        node.parentNode.replaceChild(nodeScriptClone(node), node);
+    } else {
         var i = -1, children = node.childNodes;
-        while ( ++i < children.length ) {
-            nodeScriptReplace( children[i] );
+        while (++i < children.length) {
+            nodeScriptReplace(children[i]);
         }
     }
 
     return node;
 }
-function nodeScriptClone(node){
-    var script  = document.createElement("script");
+
+function nodeScriptClone(node) {
+    var script = document.createElement("script");
     script.text = node.innerHTML;
 
     var i = -1, attrs = node.attributes, attr;
-    while ( ++i < attrs.length ) {
-        script.setAttribute( (attr = attrs[i]).name, attr.value );
+    while (++i < attrs.length) {
+        script.setAttribute((attr = attrs[i]).name, attr.value);
     }
     return script;
 }
