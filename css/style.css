@@ -68,8 +68,9 @@ footer {
 }
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    /*background-color: #eee;*/
+    color: yellow;
+    background-color: transparent;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -82,13 +83,15 @@ footer {
 
 .active, .accordion:hover {
     background-color: #ccc;
+
 }
 
 .help_panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
-    overflow: hidden;
+    /*background-color: white;*/
+    /*overflow: hidden;*/
+    overflow: visible;
 }
 
 <!--
