@@ -1,0 +1,67 @@
+<h2>Help</h2>
+<p>If you need assistance, please reach out to our support team at <a
+  href="mailto:llansailing@gmail.com">llansailing@gmail.com</a>.</p>
+<p>You can also visit our FAQ section [link to FAQ page] for quick answers to common questions.</p>
+
+<div className="dropdown">
+  <button onClick="toggleDropdown()" className="dropbtn">Help Topics</button>
+  <div id="dropdownContent" className="dropdown-content">
+    <a href="#safety">Safety Guidelines</a>
+    <a href="#membership">Membership Information</a>
+    <a href="#events">Upcoming Events</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</div>
+
+<script>
+  function toggleDropdown() {
+    document.getElementById("dropdownContent").classList.toggle("show");
+  }
+
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+
+<button class="accordion">Safety Guidelines</button>
+<div class="panel">
+  <p>Safety Guidelines.</p>
+</div>
+
+<button class="accordion">Membership Information</button>
+<div class="panel">
+  <p>Membership Information
+    Using JustGo</p>
+</div>
+
+<button class="accordion">Contact Us</button>
+<div class="panel">
+  <p>You can reach us by email on llansailing.gmail.com</p>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
