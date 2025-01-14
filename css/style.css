@@ -61,38 +61,7 @@ nav a:hover {
         height: 400px; /* Adjust height for mobile view */
     }
 }
-
-/* Styles for larger screens */
-@media (min-width: 1024px) {
-    body {
-        padding: 0 20px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 1em 2em;
-    }
-
-    nav a {
-        margin: 0 20px;
-        font-size: 1.2em;
-    }
-
-    section {
-        padding: 2em;
-        margin: 2em auto;
-        max-width: 1200px;
-    }
-
-    footer {
-        padding: 1em 2em;
-    }
-
-    .responsive-embed {
-        height: 600px; /* Adjust height for larger view */
-    }
-}
+ 
 
 
 section {
@@ -127,9 +96,7 @@ footer {
 
 .responsive-embed {
     width: 100%;
-    height: auto;
-    max-width: 100%;
-    border: none;
+    height: 100vh; /* Full viewport height */
+    border: 1px solid #333; /* Optional - to see the boundaries */
 }
-
 
