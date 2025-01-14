@@ -1,14 +1,19 @@
-<img src="img/empty.gif" onload="alert('test');this.parentNode.removeChild(this);"/>
-
 <h2>Answers to our most asked questions</h2><p>If you need assistance, please contact us at
     <a href="mailto:llansailing@gmail.com">llansailing@gmail.com</a>.</p>
 
+<ul>
+    <li><a href="#" onclick="loadHelpContent('pages/help/login.html')">How to log in</a></li>
+    <li><a href="#" onclick="loadHelpContent('pages/help/renew_membership.html')">How to renew my membership</a></li>
+    <li><a href="#" onclick="loadHelpContent('pages/help/contact_support.html')">Contacting support</a></li>
+</ul>
 
-<!-- Embed PDF -->
-<embed class="responsive-embed" src="files/just_go.pdf" type="application/pdf">
+
+<section id="help_content" aria-dropeffect="popup" style="display: none;">
+  
+    <p>Loading... Please wait.</p>
+</section>
 
 
-</div>
 
 
 

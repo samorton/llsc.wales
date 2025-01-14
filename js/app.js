@@ -8,6 +8,26 @@ function loadContent(page) {
         })
         .then(html => {
             document.getElementById('content').innerHTML = html;
+
+            // nodeScriptReplace(document.getElementsByTagName("body")[0]);
+        })
+        .catch(error => {
+            console.error('There was a problem loading the content:', error);
+            document.getElementById('content').innerHTML = '<p>Sorry, an error occurred while loading the content.</p>';
+
+        });
+}
+function loadHelpContent(page) {
+    fetch(page)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById('help_content').innerHTML = html;
+            document.getElementById('help_content').style.display="block";
             // nodeScriptReplace(document.getElementsByTagName("body")[0]);
         })
         .catch(error => {

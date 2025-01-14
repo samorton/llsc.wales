@@ -61,7 +61,7 @@ nav a:hover {
         height: 400px; /* Adjust height for mobile view */
     }
 }
- 
+
 
 
 section {
@@ -100,3 +100,33 @@ footer {
     border: 1px solid #333; /* Optional - to see the boundaries */
 }
 
+
+
+
+/* List styles */
+ol, ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Link styles */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
