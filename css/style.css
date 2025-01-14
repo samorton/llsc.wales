@@ -28,12 +28,10 @@ nav a:hover {
 }
 
 
-
-
 /* Styles for mobile devices */
 @media (max-width: 600px) {
-    .responsive-embed {
-        height: 400px; /* Adjust height for mobile view */
+    body {
+        padding: 0 10px;
     }
 
     nav {
@@ -49,8 +47,52 @@ nav a:hover {
         text-align: center;
     }
 
+    section {
+        padding: 1em;
+        margin: 0.5em auto;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 0.5em;
+    }
+
+    .responsive-embed {
+        height: 400px; /* Adjust height for mobile view */
+    }
 }
 
+/* Styles for larger screens */
+@media (min-width: 1024px) {
+    body {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 2em;
+    }
+
+    nav a {
+        margin: 0 20px;
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 2em;
+        margin: 2em auto;
+        max-width: 1200px;
+    }
+
+    footer {
+        padding: 1em 2em;
+    }
+
+    .responsive-embed {
+        height: 600px; /* Adjust height for larger view */
+    }
+}
 
 
 section {
